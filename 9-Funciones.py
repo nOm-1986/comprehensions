@@ -20,3 +20,20 @@ def sum_with_range(min: int, max:int)->int:
 
 
 print(sum_with_range(1,10))
+
+
+def find_volum(length : int, width: int = 2, depth: int = 1)->list:
+    return list((length * width * depth, width, 'hola'))
+    #return [length * width * depth, width, 'hola']
+
+
+def find_area(base: int, hight:int = 1):
+    return {base * hight, }
+
+
+resulta = find_volum(2)
+area = find_area(3)
+
+print(resulta)
+print(f'Typo de retorno de find_volum: {type(resulta)}')
+print(area)
