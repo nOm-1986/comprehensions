@@ -22,3 +22,18 @@ elif opcion == 3:
     conversacion('3')
 else:
     print('Elija solo una de esas 3 opciones')
+
+
+def greet(name="Sin nombre", last_name="Sin apellido"):
+    print("Hola", name, last_name)
+
+while True:
+    print('xx'*10, "Bienvenido a Saludar", 'xx'*10)
+    finalizar = int(input("Finalizar == 1, Seguir == 2. \n"))
+    if finalizar == 1:
+        print("Saliendo. \n")
+        break
+    else:
+        nombre = input("Ingrese su nombre. \n")
+        apellido = input("Ingrese su apellido. \n")
+        greet(nombre, apellido)
