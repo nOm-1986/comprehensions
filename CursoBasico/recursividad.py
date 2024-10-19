@@ -6,5 +6,4 @@ def factorial(n):
 
 factorial_5 = print(factorial(5))
 
-def fibonacci(n):
     
