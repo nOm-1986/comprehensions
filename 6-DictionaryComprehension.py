@@ -23,19 +23,19 @@ def run():
 
 
 def dictionary_with_condition():
-    countries = ['col','mex','bol','pe','ar','ve','ch','br','ec']
-    pupulation = [54, 63, 42, 36, 55, 10, 24, 100, 60]
-    more_population = {country: pop for country, pop in zip(countries, pupulation) if pop > 50}
-    less_population = {country: pop for country, pop in zip(countries, pupulation) if pop < 50}
-    print(more_population)
-    print(less_population)
+    # countries = ['col','mex','bol','pe','ar','ve','ch','br','ec']
+    # pupulation = [54, 63, 42, 36, 55, 10, 24, 100, 60]
+    # more_population = {country: pop for country, pop in zip(countries, pupulation) if pop > 50}
+    # less_population = {country: pop for country, pop in zip(countries, pupulation) if pop < 50}
+    # print(more_population)
+    # print(less_population)
 
     text = 'Hola, soy Fabián Beltrán'
     unique = {c: c.upper() for c in text if c in 'aeiou'}
     amount = {c: text.count(c) for c in text }
     amount2 = {c: text.count(c) for c in text if c in 'aeiouáéíóú'}
     #print(unique)
-    #print(amount)
+    print(amount)
     print(amount2)
 
 if __name__ == '__main__':
