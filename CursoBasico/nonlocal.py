@@ -11,11 +11,6 @@ outer_function()
 
 employes = [
     {
-    "name": "Fabian",
-    "age": 12,
-    "salary": 1000,
-    },
-    {
     "name": "Jose",
     "age": 14,
     "salary": 2000,
@@ -36,3 +31,4 @@ def more_than_salary(employees: list, threshold: int = 2000) ->list:
     return list(filter(lambda x: x['salary'] > threshold, employees))
 
 print(more_than_salary(employes))
+print(more_than_salary(employes, 1500))
