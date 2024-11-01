@@ -33,7 +33,7 @@ def count_products(orders: list[str]) -> defaultdict:
     return product_count
 
 
-def left_products(list_order_produc, stored_products) -> list:
+def remove_item_products(list_order_produc, stored_products) -> list:
     print(OrderStatus.SHIPPED)
     despachados = list
     for k, v in list_order_produc.items():
@@ -57,7 +57,7 @@ try:
 }
     print(f'Productos disponibles: ', availables_products)
     ordenar = count_products(order_1)
-    productos_despachados = left_products(ordenar, availables_products)
+    productos_despachados = remove_item_products(ordenar, availables_products)
     print(f'Productos despachados: ', productos_despachados)
     print(f'Productos disponibles: ', availables_products)
     
