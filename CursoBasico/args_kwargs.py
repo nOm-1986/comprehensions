@@ -1,4 +1,0 @@
-"""
-Argumentos *args y **kwargs
-
-"""
