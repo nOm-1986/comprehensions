@@ -30,8 +30,12 @@ employee.salary = 8000
 print(employee.salary)
 
 # intentar establecer un salario negativo
-employee.salary = -10000
+#employee.salary = -10000
+
+# Eliminar un salario
+del employee.salary
 
 # Propias inquietudes con propiedades privadas
 employee.__salary2 = 4000
 print(employee.__salary2)
+
